@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,10 +71,10 @@
             font-style: italic;
         }
 
-        ul {
+        ul, ol {
             display: inline-block;
             text-align: left;
-            font-size: 23px;
+            font-size: 20px;
             line-height: 1.5;
         }
 
@@ -92,16 +93,11 @@
 
     <h1>Selamat Datang di Ghauri Zaki Restaurant</h1>
 
-    <!-- LINK / NAVIGASI -->
     <nav>
-        <a href="index.html">Home</a>
-        |
-        <a href="profil.html">Profil</a>
-        |
-        <a href="about.html">About</a>
-        |
-        <a href="gallery.html">Gallery</a>
-        |
+        <a href="index.html">Home</a> |
+        <a href="profil.html">Profil</a> |
+        <a href="about.html">About</a> |
+        <a href="gallery.html">Gallery</a> |
         <a href="kontak.html">Kontak</a>
     </nav>
 
@@ -114,23 +110,65 @@
 
     <div class="menu">
 
-        <h2>Daftar Menu</h2>
-
-        <hr>
+        <h2>Daftar Menu Restoran</h2>
 
         <p>
-            "Menyediakan makanan dan minuman dengan harga terjangkau"
+            Ghauri Zaki Restaurant menyediakan berbagai makanan,
+            minuman, dan dessert dengan harga terjangkau.
+            Silakan pilih menu yang Anda inginkan.
         </p>
 
+        <h3>Kategori Menu</h3>
+
+        <!-- Nested List -->
         <ul>
-            <li>Nasi Goreng - Rp20.000</li>
-            <li>Mie Goreng - Rp18.000</li>
-            <li>Ayam Bakar - Rp25.000</li>
-            <li>Soto Ayam - Rp22.000</li>
-            <li>Es Teh Manis - Rp5.000</li>
+            <li>Makanan
+                <ul>
+                    <li>Nasi Goreng - Rp20.000</li>
+                    <li>Mie Goreng - Rp18.000</li>
+                    <li>Ayam Bakar - Rp25.000</li>
+                    <li>Soto Ayam - Rp22.000</li>
+                </ul>
+            </li>
+
+            <li>Minuman
+                <ul>
+                    <li>Es Teh Manis - Rp5.000</li>
+                </ul>
+            </li>
+
+            <li>Dessert
+                <ul>
+                    <li>Es Krim - Rp10.000</li>
+                </ul>
+            </li>
         </ul>
 
-        <h3>Harga dalam Dollar</h3>
+    </div>
+
+    <div class="menu">
+
+        <h2>Langkah-Langkah Pemesanan</h2>
+
+        <p>
+            Ikuti langkah berikut untuk melakukan pemesanan makanan
+            di Ghauri Zaki Restaurant.
+        </p>
+
+        <!-- Ordered List -->
+        <ol>
+            <li>Pilih makanan, minuman, atau dessert yang diinginkan.</li>
+            <li>Catat nama menu dan jumlah pesanan.</li>
+            <li>Sampaikan pesanan kepada pelayan.</li>
+            <li>Tunggu makanan dan minuman disiapkan.</li>
+            <li>Lakukan pembayaran setelah pesanan selesai.</li>
+        </ol>
+
+    </div>
+
+    <div class="menu">
+
+        <h2>Harga dalam Dollar</h2>
 
         <p>Nasi Goreng - &dollar;2</p>
         <p>Ayam Bakar - &dollar;3</p>
@@ -148,10 +186,9 @@
     </div>
 
     <div class="footer">
-
         <b>Ghauri Zaki Restaurant &copy; 2026</b>
-
     </div>
 
 </body>
 </html>
+```
