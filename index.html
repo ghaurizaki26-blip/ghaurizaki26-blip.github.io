@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ghauri Zaki Restaurant</title>
 
     <style>
+
         * {
             box-sizing: border-box;
             scroll-behavior: smooth;
@@ -14,7 +19,6 @@
             font-family: Arial, sans-serif;
             background-color: #d9ead3;
             color: #333;
-            text-align: center;
         }
 
         /* ================= HEADER ================= */
@@ -27,13 +31,12 @@
         }
 
         header h1 {
-            font-size: 45px;
+            font-size: 42px;
             margin: 10px 0;
         }
 
         header p {
             font-size: 18px;
-            margin: 10px 0;
         }
 
         /* ================= NAVIGASI ================= */
@@ -52,8 +55,7 @@
             color: #8b4513;
             text-decoration: none;
             font-weight: bold;
-            margin: 0 15px;
-            transition: 0.3s;
+            margin: 0 12px;
         }
 
         nav a:hover {
@@ -66,20 +68,18 @@
             display: inline-block;
             background-color: #8b4513;
             color: white;
-            padding: 13px 28px;
+            padding: 12px 25px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
             margin-top: 10px;
-            transition: 0.3s;
         }
 
         .btn:hover {
             background-color: #d35400;
-            transform: scale(1.05);
         }
 
-        /* ================= CONTAINER ================= */
+        /* ================= BOX ================= */
 
         .box {
             background-color: white;
@@ -87,17 +87,13 @@
             border-radius: 18px;
             padding: 30px;
             width: 92%;
-            margin: 15px auto;
+            margin: 20px auto;
+            text-align: center;
         }
 
         .section-title {
             color: #8b4513;
             font-size: 30px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            line-height: 1.7;
         }
 
         /* ================= VIDEO ================= */
@@ -107,8 +103,9 @@
             border: 3px solid #8b4513;
             border-radius: 18px;
             width: 92%;
-            margin: 15px auto;
+            margin: 20px auto;
             padding: 25px;
+            text-align: center;
         }
 
         video {
@@ -126,13 +123,13 @@
 
         .promo-title {
             color: #c0392b;
-            font-size: 36px;
+            font-size: 35px;
             font-weight: bold;
         }
 
         .promo-subtitle {
             color: #8b4513;
-            font-size: 23px;
+            font-size: 22px;
             font-weight: bold;
         }
 
@@ -146,12 +143,10 @@
             background-color: #fffaf0;
             border: 2px solid #e1b765;
             border-radius: 18px;
-            transition: 0.3s;
         }
 
         .promo-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
         }
 
         .promo-icon {
@@ -160,12 +155,11 @@
 
         .promo-card h3 {
             color: #8b4513;
-            font-size: 23px;
         }
 
         .promo-price {
             color: #d35400;
-            font-size: 30px;
+            font-size: 28px;
             font-weight: bold;
         }
 
@@ -180,12 +174,10 @@
             background-color: #fafafa;
             border: 1px solid #ddd;
             border-radius: 15px;
-            transition: 0.3s;
         }
 
         .menu-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 7px 15px rgba(0,0,0,0.12);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
         }
 
         .menu-icon {
@@ -208,7 +200,6 @@
         ol {
             display: inline-block;
             text-align: left;
-            font-size: 18px;
             line-height: 1.8;
         }
 
@@ -243,6 +234,93 @@
             background-color: #ffe8bf;
         }
 
+        /* ================= FORM PEMESANAN ================= */
+
+        .form-pemesanan {
+            background-color: #fffaf0;
+            border: 3px solid #8b4513;
+            border-radius: 18px;
+            padding: 25px;
+            width: 92%;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .form-pemesanan table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .form-pemesanan td {
+            padding: 10px;
+        }
+
+        .form-pemesanan label {
+            font-weight: bold;
+            color: #8b4513;
+        }
+
+        .form-pemesanan input[type="text"],
+        .form-pemesanan input[type="tel"],
+        .form-pemesanan input[type="date"],
+        .form-pemesanan select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #c9a66b;
+            border-radius: 6px;
+            background-color: white;
+        }
+
+        .form-pemesanan input:focus,
+        .form-pemesanan select:focus {
+            outline: none;
+            border: 2px solid #8b4513;
+        }
+
+        .paket {
+            background-color: #f9f2ea;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .paket-item {
+            margin: 10px 0;
+        }
+
+        .jumlah {
+            width: 80px !important;
+        }
+
+        .pembayaran {
+            background-color: #f9f2ea;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .logo-pembayaran {
+            display: inline-block;
+            padding: 6px 12px;
+            margin: 3px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn-kirim {
+            background-color: #8b4513;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-kirim:hover {
+            background-color: #d35400;
+        }
+
         /* ================= ALAMAT ================= */
 
         .address {
@@ -269,16 +347,12 @@
             margin-top: 20px;
         }
 
-        footer h2 {
-            color: white;
-        }
-
         /* ================= RESPONSIVE ================= */
 
         @media screen and (max-width: 800px) {
 
             header h1 {
-                font-size: 35px;
+                font-size: 30px;
             }
 
             nav a {
@@ -298,515 +372,875 @@
                 width: 100%;
             }
 
-            .harga {
-                font-size: 13px;
+            .form-pemesanan {
+                width: 95%;
+                overflow-x: auto;
             }
 
-            .harga th,
-            .harga td {
-                padding: 8px;
-            }
         }
+
     </style>
 </head>
 
+
 <body>
 
-    <!-- ================= HEADER ================= -->
 
-    <header id="home">
+<!-- ================= HEADER ================= -->
 
-        <div style="font-size: 45px;">
-            🍽️
-        </div>
+<header id="home">
 
-        <h1>
-            Selamat Datang di Ghauri Zaki Restaurant
-        </h1>
-
-        <p>
-            Makan Enak • Harga Bersahabat • Pelayanan Ramah
-        </p>
-
-        <a href="#menu" class="btn">
-            Lihat Menu
-        </a>
-
-    </header>
-
-
-    <!-- ================= NAVIGASI ================= -->
-
-    <nav>
-
-        <a href="#home">HOME</a>
-
-        <a href="#promo">PROMO</a>
-
-        <a href="#tentang">TENTANG</a>
-
-        <a href="#menu">MENU</a>
-
-        <a href="#pemesanan">PEMESANAN</a>
-
-        <a href="#alamat">ALAMAT</a>
-
-    </nav>
-
-
-    <!-- ================= VIDEO ================= -->
-
-    <div class="video-box">
-
-        <h2 class="section-title">
-            🎬 Video Ghauri Zaki Restaurant
-        </h2>
-
-        <p>
-            Kenali menu dan suasana Ghauri Zaki Restaurant
-            melalui video berikut.
-        </p>
-
-        <video controls>
-            <source src="menu.mp4" type="video/mp4">
-            Browser Anda tidak mendukung video.
-        </video>
-
+    <div style="font-size: 45px;">
+        🍽️
     </div>
 
+    <h1>
+        Selamat Datang di Ghauri Zaki Restaurant
+    </h1>
 
-    <!-- ================= PROMO ================= -->
+    <p>
+        Makan Enak • Harga Bersahabat • Pelayanan Ramah
+    </p>
 
-    <div class="box promo-section" id="promo">
+    <a href="#menu" class="btn">
+        Lihat Menu
+    </a>
 
-        <div class="promo-title">
-            🔥 PROMO SPESIAL 🔥
-        </div>
-
-        <div class="promo-subtitle">
-            Makan Enak, Harga Bersahabat!
-        </div>
-
-        <p>
-            Lagi cari tempat makan yang enak dan nyaman?
-            <b>Ghauri Zaki Restaurant</b> siap menemani
-            waktu makan kamu bersama keluarga,
-            teman, maupun orang terdekat.
-        </p>
+</header>
 
 
-        <!-- PROMO 1 -->
+<!-- ================= NAVIGASI ================= -->
 
-        <div class="promo-card">
+<nav>
 
-            <div class="promo-icon">
-                🍚
-            </div>
+    <a href="#home">HOME</a>
 
-            <h3>
-                PAKET HEMAT
-            </h3>
+    <a href="#promo">PROMO</a>
 
-            <p>
-                Nasi Goreng
-                <br>
-                +
-                <br>
-                Es Teh Manis
-            </p>
+    <a href="#tentang">TENTANG</a>
 
-            <div class="promo-price">
-                Rp25.000
-            </div>
+    <a href="#menu">MENU</a>
 
-            <p>
-                Cocok untuk makan siang
-                atau makan malam.
-            </p>
+    <a href="#pemesanan">PEMESANAN</a>
 
-        </div>
+    <a href="#alamat">ALAMAT</a>
+
+</nav>
 
 
-        <!-- PROMO 2 -->
+<!-- ================= VIDEO ================= -->
 
-        <div class="promo-card">
+<div class="video-box">
 
-            <div class="promo-icon">
-                🎁
-            </div>
+    <h2 class="section-title">
+        🎬 Video Ghauri Zaki Restaurant
+    </h2>
 
-            <h3>
-                MENU FAVORIT
-            </h3>
+    <p>
+        Kenali menu dan suasana Ghauri Zaki Restaurant
+        melalui video berikut.
+    </p>
 
-            <p>
-                Pilihan makanan, minuman,
-                dan dessert dengan harga
-                yang terjangkau.
-            </p>
+    <video controls>
 
-            <div class="promo-price">
-                Mulai Rp5.000
-            </div>
+        <source src="menu.mp4" type="video/mp4">
 
-        </div>
+        Browser Anda tidak mendukung video.
 
-        <p class="promo-subtitle">
-            ⭐ Datang • Pesan • Nikmati ⭐
-        </p>
+    </video>
 
-        <a href="#menu" class="btn">
-            🍽️ Lihat Semua Menu
-        </a>
+</div>
 
+
+<!-- ================= PROMO ================= -->
+
+<div class="box promo-section" id="promo">
+
+    <div class="promo-title">
+        🔥 PROMO SPESIAL 🔥
     </div>
 
-
-    <!-- ================= TENTANG ================= -->
-
-    <div class="box" id="tentang">
-
-        <h2 class="section-title">
-            🏠 Tentang Kami
-        </h2>
-
-        <p>
-            Ghauri Zaki Restaurant menyediakan berbagai
-            pilihan makanan, minuman, dan dessert
-            dengan harga yang terjangkau.
-        </p>
-
-        <p>
-            Kami mengutamakan rasa yang lezat,
-            pelayanan ramah, dan suasana yang nyaman.
-        </p>
-
-        <h2 class="section-title">
-            ⭐ Keunggulan
-        </h2>
-
-        <ul>
-
-            <li>Harga ramah di kantong</li>
-            <li>Menu beragam</li>
-            <li>Rasa yang lezat</li>
-            <li>Pelayanan ramah</li>
-            <li>Tempat nyaman</li>
-            <li>Cocok untuk keluarga dan teman</li>
-
-        </ul>
-
+    <div class="promo-subtitle">
+        Makan Enak, Harga Bersahabat!
     </div>
 
-
-    <!-- ================= MENU ================= -->
-
-    <div class="box" id="menu">
-
-        <h2 class="section-title">
-            🍽️ Menu Favorit
-        </h2>
-
-        <p>
-            Pilih menu favorit kamu!
-        </p>
+    <p>
+        Lagi cari tempat makan yang enak dan nyaman?
+        <b>Ghauri Zaki Restaurant</b> siap menemani
+        waktu makan kamu bersama keluarga,
+        teman, maupun orang terdekat.
+    </p>
 
 
-        <!-- MENU 1 -->
+    <div class="promo-card">
 
-        <div class="menu-card">
-
-            <div class="menu-icon">
-                🍚
-            </div>
-
-            <h3>
-                Nasi Goreng
-            </h3>
-
-            <p>
-                Nasi goreng dengan cita rasa
-                yang lezat.
-            </p>
-
-            <div class="menu-price">
-                Rp20.000
-            </div>
-
+        <div class="promo-icon">
+            🍚
         </div>
-
-
-        <!-- MENU 2 -->
-
-        <div class="menu-card">
-
-            <div class="menu-icon">
-                🍗
-            </div>
-
-            <h3>
-                Ayam Bakar
-            </h3>
-
-            <p>
-                Ayam bakar dengan bumbu
-                yang menggugah selera.
-            </p>
-
-            <div class="menu-price">
-                Rp25.000
-            </div>
-
-        </div>
-
-
-        <!-- MENU 3 -->
-
-        <div class="menu-card">
-
-            <div class="menu-icon">
-                🍦
-            </div>
-
-            <h3>
-                Es Krim
-            </h3>
-
-            <p>
-                Dessert manis untuk
-                melengkapi waktu makan.
-            </p>
-
-            <div class="menu-price">
-                Rp10.000
-            </div>
-
-        </div>
-
-
-        <!-- NESTED LIST -->
 
         <h3>
-            Kategori Menu
+            PAKET HEMAT
         </h3>
 
-        <ul>
+        <p>
+            Nasi Goreng
+            <br>
+            +
+            <br>
+            Es Teh Manis
+        </p>
 
-            <li>
-                Makanan
+        <div class="promo-price">
+            Rp25.000
+        </div>
 
-                <ul>
-                    <li>Nasi Goreng - Rp20.000</li>
-                    <li>Mie Goreng - Rp18.000</li>
-                    <li>Ayam Bakar - Rp25.000</li>
-                    <li>Soto Ayam - Rp22.000</li>
-                </ul>
-
-            </li>
-
-
-            <li>
-                Minuman
-
-                <ul>
-                    <li>Es Teh Manis - Rp5.000</li>
-                    <li>Es Jeruk - Rp8.000</li>
-                </ul>
-
-            </li>
-
-
-            <li>
-                Dessert
-
-                <ul>
-                    <li>Es Krim - Rp10.000</li>
-                </ul>
-
-            </li>
-
-        </ul>
+        <p>
+            Cocok untuk makan siang
+            atau makan malam.
+        </p>
 
     </div>
 
 
-    <!-- ================= TABEL HARGA ================= -->
+    <div class="promo-card">
 
-    <div class="box">
+        <div class="promo-icon">
+            🎁
+        </div>
 
-        <h2 class="section-title">
-            💰 Daftar Harga Menu
-        </h2>
+        <h3>
+            MENU FAVORIT
+        </h3>
 
-        <table class="harga">
+        <p>
+            Pilihan makanan, minuman,
+            dan dessert dengan harga
+            yang terjangkau.
+        </p>
+
+        <div class="promo-price">
+            Mulai Rp5.000
+        </div>
+
+    </div>
+
+
+    <p class="promo-subtitle">
+        ⭐ Datang • Pesan • Nikmati ⭐
+    </p>
+
+    <a href="#menu" class="btn">
+        🍽️ Lihat Semua Menu
+    </a>
+
+</div>
+
+
+<!-- ================= TENTANG ================= -->
+
+<div class="box" id="tentang">
+
+    <h2 class="section-title">
+        🏠 Tentang Kami
+    </h2>
+
+    <p>
+        Ghauri Zaki Restaurant menyediakan berbagai
+        pilihan makanan, minuman, dan dessert
+        dengan harga yang terjangkau.
+    </p>
+
+    <p>
+        Kami mengutamakan rasa yang lezat,
+        pelayanan ramah, dan suasana yang nyaman.
+    </p>
+
+
+    <h2 class="section-title">
+        ⭐ Keunggulan
+    </h2>
+
+    <ul>
+
+        <li>Harga ramah di kantong</li>
+
+        <li>Menu beragam</li>
+
+        <li>Rasa yang lezat</li>
+
+        <li>Pelayanan ramah</li>
+
+        <li>Tempat nyaman</li>
+
+        <li>Cocok untuk keluarga dan teman</li>
+
+    </ul>
+
+</div>
+
+
+<!-- ================= MENU ================= -->
+
+<div class="box" id="menu">
+
+    <h2 class="section-title">
+        🍽️ Menu Favorit
+    </h2>
+
+    <p>
+        Pilih menu favorit kamu!
+    </p>
+
+
+    <div class="menu-card">
+
+        <div class="menu-icon">
+            🍚
+        </div>
+
+        <h3>
+            Nasi Goreng
+        </h3>
+
+        <p>
+            Nasi goreng dengan cita rasa
+            yang lezat.
+        </p>
+
+        <div class="menu-price">
+            Rp20.000
+        </div>
+
+    </div>
+
+
+    <div class="menu-card">
+
+        <div class="menu-icon">
+            🍗
+        </div>
+
+        <h3>
+            Ayam Bakar
+        </h3>
+
+        <p>
+            Ayam bakar dengan bumbu
+            yang menggugah selera.
+        </p>
+
+        <div class="menu-price">
+            Rp25.000
+        </div>
+
+    </div>
+
+
+    <div class="menu-card">
+
+        <div class="menu-icon">
+            🍦
+        </div>
+
+        <h3>
+            Es Krim
+        </h3>
+
+        <p>
+            Dessert manis untuk
+            melengkapi waktu makan.
+        </p>
+
+        <div class="menu-price">
+            Rp10.000
+        </div>
+
+    </div>
+
+
+    <!-- NESTED LIST -->
+
+    <h3>
+        Kategori Menu
+    </h3>
+
+    <ul>
+
+        <li>
+            Makanan
+
+            <ul>
+
+                <li>
+                    Nasi Goreng - Rp20.000
+                </li>
+
+                <li>
+                    Mie Goreng - Rp18.000
+                </li>
+
+                <li>
+                    Ayam Bakar - Rp25.000
+                </li>
+
+                <li>
+                    Soto Ayam - Rp22.000
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <li>
+            Minuman
+
+            <ul>
+
+                <li>
+                    Es Teh Manis - Rp5.000
+                </li>
+
+                <li>
+                    Es Jeruk - Rp8.000
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <li>
+            Dessert
+
+            <ul>
+
+                <li>
+                    Es Krim - Rp10.000
+                </li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- ================= TABEL HARGA ================= -->
+
+<div class="box">
+
+    <h2 class="section-title">
+        💰 Daftar Harga Menu
+    </h2>
+
+
+    <table class="harga">
+
+        <tr>
+
+            <th>No</th>
+
+            <th>Kategori</th>
+
+            <th>Menu</th>
+
+            <th>Harga</th>
+
+        </tr>
+
+
+        <tr>
+
+            <td>1</td>
+
+            <td>Makanan</td>
+
+            <td>Nasi Goreng</td>
+
+            <td>Rp20.000</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>2</td>
+
+            <td>Makanan</td>
+
+            <td>Mie Goreng</td>
+
+            <td>Rp18.000</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>3</td>
+
+            <td>Makanan</td>
+
+            <td>Ayam Bakar</td>
+
+            <td>Rp25.000</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>4</td>
+
+            <td>Minuman</td>
+
+            <td>Es Teh Manis</td>
+
+            <td>Rp5.000</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>5</td>
+
+            <td>Dessert</td>
+
+            <td>Es Krim</td>
+
+            <td>Rp10.000</td>
+
+        </tr>
+
+    </table>
+
+
+    <p class="promo-subtitle">
+
+        🎉 Menu pilihan mulai dari &dollar;2!
+
+    </p>
+
+</div>
+
+
+<!-- ================= FORM PEMESANAN ================= -->
+
+<div class="form-pemesanan" id="pemesanan">
+
+    <h2 class="section-title">
+        📝 Form Pendaftaran / Pemesanan
+    </h2>
+
+    <p>
+        Silakan isi form berikut untuk melakukan
+        pemesanan di Ghauri Zaki Restaurant.
+    </p>
+
+
+    <form>
+
+
+        <table>
+
+
+            <!-- NAMA LENGKAP -->
 
             <tr>
-                <th>No</th>
-                <th>Kategori</th>
-                <th>Menu</th>
-                <th>Harga</th>
+
+                <td width="25%">
+                    <label>
+                        Nama Lengkap
+                    </label>
+                </td>
+
+                <td width="5%">
+                    :
+                </td>
+
+                <td>
+
+                    <input
+                        type="text"
+                        name="nama"
+                        placeholder="Masukkan nama lengkap"
+                        required>
+
+                </td>
+
             </tr>
 
-            <tr>
-                <td>1</td>
-                <td>Makanan</td>
-                <td>Nasi Goreng</td>
-                <td>Rp20.000</td>
-            </tr>
+
+            <!-- NO HP -->
 
             <tr>
-                <td>2</td>
-                <td>Makanan</td>
-                <td>Mie Goreng</td>
-                <td>Rp18.000</td>
+
+                <td>
+                    <label>
+                        No. HP
+                    </label>
+                </td>
+
+                <td>
+                    :
+                </td>
+
+                <td>
+
+                    <input
+                        type="tel"
+                        name="nohp"
+                        placeholder="08xxxxxxxxxx"
+                        required>
+
+                </td>
+
             </tr>
 
-            <tr>
-                <td>3</td>
-                <td>Makanan</td>
-                <td>Ayam Bakar</td>
-                <td>Rp25.000</td>
-            </tr>
+
+            <!-- TANGGAL BOOKING -->
 
             <tr>
-                <td>4</td>
-                <td>Minuman</td>
-                <td>Es Teh Manis</td>
-                <td>Rp5.000</td>
+
+                <td>
+                    <label>
+                        Tanggal Booking
+                    </label>
+                </td>
+
+                <td>
+                    :
+                </td>
+
+                <td>
+
+                    <input
+                        type="date"
+                        name="tanggal"
+                        required>
+
+                </td>
+
             </tr>
 
+
+            <!-- PILIHAN PAKET -->
+
             <tr>
-                <td>5</td>
-                <td>Dessert</td>
-                <td>Es Krim</td>
-                <td>Rp10.000</td>
+
+                <td>
+                    <label>
+                        Pilihan Paket
+                    </label>
+                </td>
+
+                <td>
+                    :
+                </td>
+
+                <td>
+
+                    <div class="paket">
+
+
+                        <!-- MAKANAN -->
+
+                        <div class="paket-item">
+
+                            <input
+                                type="checkbox"
+                                name="paket"
+                                value="Makanan">
+
+                            🍽️ Makanan
+
+                            <br>
+
+                            Jumlah:
+
+                            <input
+                                type="text"
+                                name="jumlah_makanan"
+                                class="jumlah"
+                                placeholder="0">
+
+                        </div>
+
+
+                        <!-- MINUMAN -->
+
+                        <div class="paket-item">
+
+                            <input
+                                type="checkbox"
+                                name="paket"
+                                value="Minuman">
+
+                            🥤 Minuman
+
+                            <br>
+
+                            Jumlah:
+
+                            <input
+                                type="text"
+                                name="jumlah_minuman"
+                                class="jumlah"
+                                placeholder="0">
+
+                        </div>
+
+
+                        <!-- DESSERT -->
+
+                        <div class="paket-item">
+
+                            <input
+                                type="checkbox"
+                                name="paket"
+                                value="Dessert">
+
+                            🍰 Dessert
+
+                            <br>
+
+                            Jumlah:
+
+                            <input
+                                type="text"
+                                name="jumlah_dessert"
+                                class="jumlah"
+                                placeholder="0">
+
+                        </div>
+
+
+                    </div>
+
+                </td>
+
             </tr>
+
+
+            <!-- PEMBAYARAN -->
+
+            <tr>
+
+                <td>
+                    <label>
+                        Pembayaran
+                    </label>
+                </td>
+
+                <td>
+                    :
+                </td>
+
+                <td>
+
+                    <div class="pembayaran">
+
+
+                        <!-- VISA MASTERCARD -->
+
+                        <div>
+
+                            <input
+                                type="radio"
+                                name="pembayaran"
+                                value="Kartu"
+                                id="kartu"
+                                required>
+
+                            <label for="kartu">
+                                💳 Kartu Debit/Kredit
+                            </label>
+
+                            <br>
+
+                            <span class="logo-pembayaran">
+                                VISA
+                            </span>
+
+                            <span class="logo-pembayaran">
+                                Mastercard
+                            </span>
+
+                        </div>
+
+
+                        <br>
+
+
+                        <!-- DOMPET DIGITAL -->
+
+                        <div>
+
+                            <input
+                                type="radio"
+                                name="pembayaran"
+                                value="Dompet Digital"
+                                id="dompet">
+
+                            <label for="dompet">
+                                📱 Dompet Digital
+                            </label>
+
+                            <br>
+
+                            <span class="logo-pembayaran">
+                                DANA
+                            </span>
+
+                            <span class="logo-pembayaran">
+                                GoPay
+                            </span>
+
+                            <span class="logo-pembayaran">
+                                OVO
+                            </span>
+
+                            <span class="logo-pembayaran">
+                                ShopeePay
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+
+            <!-- NOMOR KARTU / DOMPET -->
+
+            <tr>
+
+                <td>
+                    <label>
+                        Nomor Kartu / Dompet
+                    </label>
+                </td>
+
+                <td>
+                    :
+                </td>
+
+                <td>
+
+                    <input
+                        type="text"
+                        name="nomor_pembayaran"
+                        placeholder="Masukkan nomor kartu / dompet"
+                        required>
+
+                </td>
+
+            </tr>
+
+
+            <!-- TOMBOL -->
+
+            <tr>
+
+                <td></td>
+
+                <td></td>
+
+                <td>
+
+                    <input
+                        type="submit"
+                        value="Kirim Pesanan"
+                        class="btn-kirim">
+
+                    <input
+                        type="reset"
+                        value="Ulangi"
+                        class="btn-kirim"
+                        style="background-color:#d35400; margin-left:5px;">
+
+                </td>
+
+            </tr>
+
 
         </table>
 
-        <p class="promo-subtitle">
-            🎉 Menu pilihan mulai dari &dollar;2!
-        </p>
 
+    </form>
+
+</div>
+
+
+<!-- ================= HARGA DOLLAR ================= -->
+
+<div class="box">
+
+    <h2 class="section-title">
+        💵 Harga dalam Dollar
+    </h2>
+
+    <p>
+        Nasi Goreng - &dollar;2
+    </p>
+
+    <p>
+        Ayam Bakar - &dollar;3
+    </p>
+
+</div>
+
+
+<!-- ================= ALAMAT ================= -->
+
+<div class="box address" id="alamat">
+
+    <div class="address-icon">
+        📍
     </div>
 
+    <h2 class="section-title">
+        Kunjungi Kami
+    </h2>
 
-    <!-- ================= PEMESANAN ================= -->
+    <p class="address-text">
+        Jl. Raya Indonesia No. 10,
+        Tangerang, Banten
+    </p>
 
-    <div class="box" id="pemesanan">
+    <p>
+        Kami siap menyambut Anda.
+        Datang dan nikmati menu favorit
+        bersama Ghauri Zaki Restaurant.
+    </p>
 
-        <h2 class="section-title">
-            📝 Cara Pemesanan
-        </h2>
-
-        <ol>
-
-            <li>
-                Pilih makanan atau minuman.
-            </li>
-
-            <li>
-                Catat menu yang ingin dipesan.
-            </li>
-
-            <li>
-                Sampaikan pesanan kepada pelayan.
-            </li>
-
-            <li>
-                Tunggu pesanan disiapkan.
-            </li>
-
-            <li>
-                Lakukan pembayaran.
-            </li>
-
-        </ol>
+</div>
 
 
-        <h2 class="section-title">
-            ❤️ Jangan Lewatkan!
-        </h2>
+<!-- ================= FOOTER ================= -->
 
-        <p>
-            Ajak keluarga dan teman kamu
-            untuk menikmati makanan favorit
-            di Ghauri Zaki Restaurant.
-        </p>
+<footer>
 
-        <p class="promo-subtitle">
-            Datang • Pesan • Nikmati!
-        </p>
+    <h2>
+        Ghauri Zaki Restaurant
+    </h2>
 
-        <a href="#alamat" class="btn">
-            📍 Lihat Alamat
-        </a>
+    <p>
+        Makan Enak • Harga Bersahabat • Pelayanan Ramah
+    </p>
 
-    </div>
+    <p>
+        Ghauri Zaki Restaurant &copy; 2026
+    </p>
 
-
-    <!-- ================= HARGA DOLLAR ================= -->
-
-    <div class="box">
-
-        <h2 class="section-title">
-            💵 Harga dalam Dollar
-        </h2>
-
-        <p>
-            Nasi Goreng - &dollar;2
-        </p>
-
-        <p>
-            Ayam Bakar - &dollar;3
-        </p>
-
-    </div>
-
-
-    <!-- ================= ALAMAT ================= -->
-
-    <div class="box address" id="alamat">
-
-        <div class="address-icon">
-            📍
-        </div>
-
-        <h2 class="section-title">
-            Kunjungi Kami
-        </h2>
-
-        <p class="address-text">
-            Jl. Raya Indonesia No. 10,
-            Tangerang, Banten
-        </p>
-
-        <p>
-            Kami siap menyambut Anda.
-            Datang dan nikmati menu favorit
-            bersama Ghauri Zaki Restaurant.
-        </p>
-
-    </div>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <h2>
-            Ghauri Zaki Restaurant
-        </h2>
-
-        <p>
-            Makan Enak • Harga Bersahabat • Pelayanan Ramah
-        </p>
-
-        <p>
-            Ghauri Zaki Restaurant &copy; 2026
-        </p>
-
-    </footer>
+</footer>
 
 
 </body>
